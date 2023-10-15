@@ -1,6 +1,7 @@
 mod arithmethods;  //Imprting the visibility of ArithMethods module to main.rs module
 mod vectors;
 mod tuples;
+mod concoleiofunctions;
 fn main() {
     println!("Hello, world!");
     let mut x = 10;   //If you wish assign value to varaible for more than once in a program, make it mutable 
@@ -54,19 +55,12 @@ println!(" I am calling Asub method from Arith module {}", arithmethods::asum(10
 //call displayvector
 vectors::displayvector(vec);
 
-//determine element existance , error : value used here after move
-//if vectors::elementexists(vec, 10)
-//{
-//    println!("element 10 exists in vector vec");
-//}
-//else {
-  //  println!("element 10 does not exists in vector vec");
-//}
-
-
-//Arrays 
 let marks = [1,2,3,4,5];   // an array for 5 integers of size i32 
 
+
+//IO functions 
+let myage = concoleiofunctions::readinteger();
+println!("My age is {}", myage);
 
 }
 
